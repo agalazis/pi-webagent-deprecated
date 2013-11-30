@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pi Web Agent Project</title>
+<meta name="generator" content="Bluefish 2.2.4" >
+<meta name="author" content="Andreas Galazis" >
+<meta name="date" content="2013-11-30T01:03:50+0000" >
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre' rel='stylesheet' type='text/css'>
+<link href="piweb.css" type="text/css" rel="stylesheet" />
+<script src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var windowWidth = $(window).width();
+    $(".triangle").css({
+        "border-bottom": windowWidth /1.33 + 'px solid rgb(68, 68, 68)'
+    });
+    $(".triangle").css({
+        "border-left": windowWidth  + 'px solid transparent'
+    });
+});
+
+$(window).resize(function () {
+    var windowWidthR = $(window).width();
+    $(".triangle").css({
+        "border-bottom": windowWidthR / 1.33 + 'px solid rgb(68, 68, 68)'
+    });
+    $(".triangle").css({
+        "border-left": windowWidthR  + 'px solid transparent'
+    });
+});
+</script>
+</head>
+<body>
+<h1>Pi Web Summit 2013</h1>
+<a class="twitter-timeline"  href="https://twitter.com/search?q=%23piwebsummit"  data-widget-id="406559474560675840">Tweets about "#piwebsummit"</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="ribbon"><p>PWS 2013</p></div>
+<div class="triangle"></div>
+<div class="contribute" onclick="location.href='https://github.com/vaslabs/pi-web-agent'"></div>
+</body>
+</html>
